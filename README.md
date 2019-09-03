@@ -21,11 +21,18 @@ Install package requirements:
 $ pip install -r requirements.txt
 ```
 
+Configure environment variables:
+```bash
+$ touch .env
+
+# Add following lines to .env file and save
+FLASK_APP=shorter-fyi
+FLASK_ENV=development
+```
+
 ## Run
 
 ```bash
-$ export FLASK_APP=shorter-fyi
-$ export FLASK_ENV=development
 $ flask run
 ```
 Open [http://127.0.0.1:5000](http://127.0.0.1:5000) in a browser.
